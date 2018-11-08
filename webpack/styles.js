@@ -6,7 +6,7 @@ module.exports = (isDevMode) => ({
         fallback: 'style-loader',
         use: [{
             loader: 'css-loader',
-            options: {sourceMap: isDevMode}
+            options: {sourceMap: isDevMode, name: '[path][name].[ext]'}
         }, {
             loader: 'postcss-loader',
             options: {sourceMap: isDevMode}

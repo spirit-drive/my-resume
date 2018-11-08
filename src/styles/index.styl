@@ -1,10 +1,18 @@
 @import "reset.styl"
+@import "variables.styl"
 @import "mixins.styl"
 
 *
   box-sizing: border-box
 
+html
 body
-  background-color: #cf
+  height: 100%
+
+body
+  color: color2
+  background: url("../img/keybord.jpg") no-repeat center
+  background-size: cover
+  background-attachment: fixed
 
 @import "../components/**/*.styl"

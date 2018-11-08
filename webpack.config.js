@@ -33,7 +33,7 @@ module.exports = (env, options) => {
             new Html({
                 template: 'index.html'
             }),
-            new ExtractTextPlugin("css/[name].css"),
+            new ExtractTextPlugin("[name].css"),
             new Clean([dist]),
             new Imagemin({
                 test: /\.(png|gif|jpe?g|svg)$/i
