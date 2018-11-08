@@ -16,7 +16,7 @@ module.exports = (env, options) => {
 
     return {
         context: src,
-        entry: './index.tsx',
+        entry: './index.js',
         output: {
             path: dist,
             filename: 'js/[name].js',
